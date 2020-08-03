@@ -54,7 +54,7 @@ public class CartControllerTest {
     cartRequest.setUsername("john");
     cartRequest.setQuantity(5);
 
-    ResponseEntity<Cart> response = cartController.addTocart(cartRequest);
+    ResponseEntity<Cart> response = cartController.addToCart(cartRequest);
     Cart returnedCart = response.getBody();
 
     assertNotNull(response);
@@ -81,7 +81,7 @@ public class CartControllerTest {
     cartRequest.setUsername("john");
     cartRequest.setQuantity(5);
 
-    ResponseEntity<Cart> response = cartController.addTocart(cartRequest);
+    ResponseEntity<Cart> response = cartController.addToCart(cartRequest);
 
     assertNotNull(response);
     assertEquals(404, response.getStatusCodeValue());

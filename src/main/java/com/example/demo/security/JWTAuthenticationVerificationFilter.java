@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import static com.auth0.jwt.algorithms.Algorithm.HMAC512;
 import static com.example.demo.security.SecurityConstants.HEADER_STRING;
 import static com.example.demo.security.SecurityConstants.TOKEN_PREFIX;
 import static com.example.demo.security.SecurityConstants.SECRET;
@@ -45,7 +46,7 @@ public class JWTAuthenticationVerificationFilter extends BasicAuthenticationFilt
     String token = request.getHeader(HEADER_STRING);
     if (token != null) {
       // parse the token.
-      String user = JWT.require(Algorithm.HMAC512(SECRET.getBytes()))
+      String user = JWT.require(HMAC512(SECRET.getBytes()))
           .build()
           .verify(token.replace(TOKEN_PREFIX, ""))
           .getSubject();
