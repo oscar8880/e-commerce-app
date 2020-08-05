@@ -21,7 +21,7 @@ Completed as part of the Udacity Java Web Developer Nano Degree.
 
 ## Testing
 
-1.Right click on `src/main/java/com.example.demo.` and click `Run 'All Tests' with coverage`.
+1. Right click on `src/main/java/com.example.demo.` and click `Run 'All Tests' with coverage`.
 
 A window should open showing you the test executions.
 
@@ -30,7 +30,6 @@ A window should open showing you the test executions.
 * [Spring Boot](https://spring.io/projects/spring-boot) - Framework providing dependency injection, web framework, data binding, resource management, transaction management, and more.
 * [Google Guava](https://github.com/google/guava) - A set of core libraries used in this project for their collections utilities.
 * [H2 Database Engine](https://www.h2database.com/html/main.html) - An in-memory database used in this project to run unit tests.
-* [MySQL Connector/J](https://www.mysql.com/products/connector/) - JDBC Drivers to allow Java to connect to MySQL Server
 
 ## License
 
