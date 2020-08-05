@@ -21,8 +21,7 @@ Completed as part of the Udacity Java Web Developer Nano Degree.
 
 ## Testing
 
-1. Navigate to `src/test/java/com.example.demo`.
-2. Within that directory, click on `ECommerceApplicationTest.java` and select `Run` -> `Run ECommerceApplicationTest`.
+1.Right click on `src/main/java/com.example.demo.` and click `Run 'All Tests' with coverage`.
 
 A window should open showing you the test executions.
 
